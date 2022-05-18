@@ -6,6 +6,10 @@ const path = require('path')
 const width = 1080;
 const height = 1920;
 
+console.log("process.env", process.env.npm_config_url)
+
+const url = process.env.npm_config_url || "http://example.com"
+
 app.on('ready', function() {
 
   // Create the browser window.
@@ -22,7 +26,8 @@ app.on('ready', function() {
     'resizable': false
   });
 
-  mainWindow.loadURL('http://192.168.178.21:3000/')
+  mainWindow.loadURL(url)
+
 });
 
 // This method will be called when Electron has finished
