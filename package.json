@@ -1,0 +1,14 @@
+{
+  "name": "eletron_kiosk_mode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^18.2.3"
+  }
+}
